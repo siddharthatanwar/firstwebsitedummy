@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" style="height: 40px;">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse text-center" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Executions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="#">We can Do 1</a></li>
+              <li><a class="dropdown-item" href="#">We can Do 2</a></li>
+              <li><a class="dropdown-item" href="#">We can Do 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+        </ul>
+
+        <!-- Get Started Button -->
+        <div class="d-none d-md-block">
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Indicators -->
+   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+   <ol class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6"></button>
+   </ol>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="scripts.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-image: url('images/slide1.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 1</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" style="background-image: url('images/slide2.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 2</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item" style="background-image: url('images/slide3.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 3</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item" style="background-image: url('images/slide4.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 4</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item" style="background-image: url('images/slide5.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 5</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="carousel-item" style="background-image: url('images/slide6.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 6</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="carousel-item" style="background-image: url('images/slide7.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption text-center">
+        <h1>Hero Title 7</h1>
+        <p>Lorem ipsum dolor sit amet.<br>Consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Side: Tabs and Content -->
+        <div class="col-lg-6">
+          <small class="text-uppercase text-muted">Execution</small>
+          <ul class="nav nav-tabs mt-3" id="aboutTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="company-tab" data-bs-toggle="tab" data-bs-target="#company" type="button" role="tab">Our Company</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab">Our Mission</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab">Our Vision</button>
+            </li>
+          </ul>
+  
+          <div class="tab-content mt-4" id="aboutTabsContent">
+            <!-- Our Company Tab -->
+            <div class="tab-pane fade show active" id="company" role="tabpanel">
+              <h3>Leading the Industry</h3>
+              <p>Our company has been delivering top-notch solutions for over a decade. We focus on innovation, customer satisfaction, and sustainable growth.</p>
+            </div>
+  
+            <!-- Our Mission Tab -->
+            <div class="tab-pane fade" id="mission" role="tabpanel">
+              <h3>Driven by Purpose</h3>
+              <p>Our mission is to empower communities through cutting-edge technologies, ethical practices, and impactful services.</p>
+            </div>
+  
+            <!-- Our Vision Tab -->
+            <div class="tab-pane fade" id="vision" role="tabpanel">
+              <h3>Vision for the Future</h3>
+              <p>We envision a world where technology bridges gaps, fosters growth, and enables every individual and business to thrive.</p>
+              <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Side: Image -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="images/about us 2.jpg" alt="About Image" class="img-fluid rounded shadow">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <!-- Section Heading -->
+      <h2 class="mb-3">Our Services</h2>
+      <p class="mb-5 text-muted">
+        We provide a range of high-quality services tailored to meet the evolving needs of modern businesses. From strategy to execution, our expert team is here to help you succeed.
+      </p>
+  
+      <!-- Services Grid -->
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-gear-fill display-5 text-primary"></i>
+                
+              </div>
+              <h5 class="card-title">Service 1</h5>
+              <p class="card-text">We deliver innovative and customized solutions to meet your operational needs efficiently.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-bar-chart-fill display-5 text-success"></i>
+                
+              </div>
+              <h5 class="card-title">Service 2</h5>
+              <p class="card-text">Our analytics services empower you with data-driven decisions for better outcomes.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-laptop-fill display-5 text-info"></i>
+                
+              </div>
+              <h5 class="card-title">Service 3</h5>
+              <p class="card-text">We develop responsive and modern applications tailored to your business goals.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-cloud-fill display-5 text-warning"></i>
+               
+              </div>
+              <h5 class="card-title">Service 4</h5>
+              <p class="card-text">Cloud-based solutions to help scale your infrastructure quickly and securely.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-shield-lock-fill display-5 text-danger"></i>
+               
+              </div>
+              <h5 class="card-title">Service 5</h5>
+              <p class="card-text">Robust cybersecurity services to protect your business from digital threats.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-people-fill display-5 text-secondary"></i>
+                
+              </div>
+              <h5 class="card-title">Service 6</h5>
+              <p class="card-text">Consulting services to align your teams, culture, and technology.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- OUR PROJECTS SECTION -->
+<section class="projects-section py-5">
+    <div class="container">
+      <!-- Heading -->
+      <div class="text-end mb-5">
+        <h2 class="fw-bold">Our Projects</h2>
+      </div>
+  
+      <!-- Tabs -->
+      <ul class="nav nav-pills mb-4 justify-content-center" id="projectTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="apps-tab" data-bs-toggle="pill" data-bs-target="#apps" type="button">Apps</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="products-tab" data-bs-toggle="pill" data-bs-target="#products" type="button">Products</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="branding-tab" data-bs-toggle="pill" data-bs-target="#branding" type="button">Branding</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="books-tab" data-bs-toggle="pill" data-bs-target="#books" type="button">Books</button>
+        </li>
+      </ul>
+  
+      <!-- Tab Content -->
+      <div class="tab-content" id="projectTabContent">
+        <!-- All Projects Tab -->
+        <div class="tab-pane fade show active" id="all" role="tabpanel">
+          <div class="row g-4">
+            <!-- ROW 1 -->
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 1.jpg" alt="Project 1">
+                <div class="overlay"><h5>Project 1</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box up">
+                <img src="images/project 2.jpg" alt="Project 2">
+                <div class="overlay"><h5>Project 2</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 3.jpg" alt="Project 3">
+                <div class="overlay"><h5>Project 3</h5></div>
+              </div>
+            </div>
+  
+            <!-- ROW 2 -->
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 4.jpg" alt="Project 4">
+                <div class="overlay"><h5>Project 4</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box up">
+                <img src="images/project 5.jpg" alt="Project 5">
+                <div class="overlay"><h5>Project 5</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 6.jpg" alt="Project 6">
+                <div class="overlay"><h5>Project 6</h5></div>
+              </div>
+            </div>
+  
+            <!-- ROW 3 -->
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 7.jpg" alt="Project 7">
+                <div class="overlay"><h5>Project 7</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box up">
+                <img src="images/project 8.jpg" alt="Project 8">
+                <div class="overlay"><h5>Project 8</h5></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box down">
+                <img src="images/project 9.jpg" alt="Project 9">
+                <div class="overlay"><h5>Project 9</h5></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Other tabs (apps, products, branding, books) can be filled similarly -->
+        <div class="tab-pane fade" id="apps" role="tabpanel">  <!-- Tab Content -->
+            <div class="tab-content" id="projectTabContent">
+              <!-- All Projects Tab -->
+              <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                  <!-- ROW 1 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 1.jpg" alt="Project 1">
+                      <div class="overlay"><h5>Project 1</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 2.jpg" alt="Project 2">
+                      <div class="overlay"><h5>Project 2</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 3.jpg" alt="Project 3">
+                      <div class="overlay"><h5>Project 3</h5></div>
+                    </div>
+                  </div>
+        
+                  <!-- ROW 2 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 4.jpg" alt="Project 4">
+                      <div class="overlay"><h5>Project 4</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 5.jpg" alt="Project 5">
+                      <div class="overlay"><h5>Project 5</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 6.jpg" alt="Project 6">
+                      <div class="overlay"><h5>Project 6</h5></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="tab-pane fade" id="products" role="tabpanel">Coming Soon ... <!-- Tab Content -->
+            <div class="tab-content" id="projectTabContent">
+              <!-- All Projects Tab -->
+              <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                  <!-- ROW 1 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 1.jpg" alt="Project 1">
+                      <div class="overlay"><h5>Project 1</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 2.jpg" alt="Project 2">
+                      <div class="overlay"><h5>Project 2</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 3.jpg" alt="Project 3">
+                      <div class="overlay"><h5>Project 3</h5></div>
+                    </div>
+                  </div>
+        
+                  <!-- ROW 2 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 4.jpg" alt="Project 4">
+                      <div class="overlay"><h5>Project 4</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 5.jpg" alt="Project 5">
+                      <div class="overlay"><h5>Project 5</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 6.jpg" alt="Project 6">
+                      <div class="overlay"><h5>Project 6</h5></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+        <div class="tab-pane fade" id="branding" role="tabpanel">Coming soon... <!-- Tab Content -->
+            <div class="tab-content" id="projectTabContent">
+              <!-- All Projects Tab -->
+              <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                  <!-- ROW 1 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 1.jpg" alt="Project 1">
+                      <div class="overlay"><h5>Project 1</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 2.jpg" alt="Project 2">
+                      <div class="overlay"><h5>Project 2</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 3.jpg" alt="Project 3">
+                      <div class="overlay"><h5>Project 3</h5></div>
+                    </div>
+                  </div>
+        
+                  <!-- ROW 2 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 4.jpg" alt="Project 4">
+                      <div class="overlay"><h5>Project 4</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 5.jpg" alt="Project 5">
+                      <div class="overlay"><h5>Project 5</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 6.jpg" alt="Project 6">
+                      <div class="overlay"><h5>Project 6</h5></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="tab-pane fade" id="books" role="tabpanel">Coming soon... <!-- Tab Content -->
+            <div class="tab-content" id="projectTabContent">
+              <!-- All Projects Tab -->
+              <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                  <!-- ROW 1 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 1.jpg" alt="Project 1">
+                      <div class="overlay"><h5>Project 1</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 2.jpg" alt="Project 2">
+                      <div class="overlay"><h5>Project 2</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 3.jpg" alt="Project 3">
+                      <div class="overlay"><h5>Project 3</h5></div>
+                    </div>
+                  </div>
+        
+                  <!-- ROW 2 -->
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 4.jpg" alt="Project 4">
+                      <div class="overlay"><h5>Project 4</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box up">
+                      <img src="images/project 5.jpg" alt="Project 5">
+                      <div class="overlay"><h5>Project 5</h5></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="project-box down">
+                      <img src="images/project 6.jpg" alt="Project 6">
+                      <div class="overlay"><h5>Project 6</h5></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- CONTACT SECTION -->
+<section class="contact-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Get in Touch</h2>
+        <p class="text-muted">We'd love to hear from you. Please fill out the form or find us on the map.</p>
+      </div>
+  
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="p-4 shadow rounded-4 bg-white h-100">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="your@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+  
+        <!-- Google Map -->
+        <div class="col-md-6">
+          <div class="map-container h-100 rounded-4 overflow-hidden shadow">
+            <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14013.123456789!2d77.42238!3d28.49426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce8f1e6b8b8b8%3A0xabcdef1234567890!2sSector%20143%2C%20Noida%2C%20Uttar%20Pradesh%20201306!5e0!3m2!1sen!2sin!4v1614036024093!5m2!1sen!2sin"
+  width="100%"
+  height="400"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Logo and About -->
+        <div class="col-md-3">
+          <h4 class="fw-bold mb-3">YourBrand</h4>
+          <p class="small">Building creative, modern, and functional websites for businesses and startups.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Projects</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Sector 143, Noida, UP, India</p>
+          <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 98765 43210</p>
+          <p class="small mb-1"><i class="bi bi-envelope-fill me-2"></i>info@yourbrand.com</p>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="small">Stay updated with our latest news and offers.</p>
+          <form>
+            <div class="input-group mb-2">
+              <input type="email" class="form-control" placeholder="Your email" />
+              <button class="btn btn-primary" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <hr class="border-light mt-4" />
+      <div class="text-center small mt-3">&copy; 2025 YourBrand. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
